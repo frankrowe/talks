@@ -1,0 +1,38 @@
+- Intro to Dashboards
+  - What is a dashboard
+  - Server Side
+  - Client Side
+  - D3
+
+
+- What is a dashboard?
+ - Visualize data
+ - Simplify complex data
+
+- Open Source
+  - Backend
+    - Linux
+    - Node.js
+    - PostgreSQL + PostGIS
+    - Node Modules
+      - Express
+      - PG
+  - Frontend
+    - Leaflet
+    - Backbone
+    - Bootstrap
+    - D3 / GeoDash
+
+- D3
+  - Data Driven Documents
+  - Programming library to map data to the DOM
+  - General purpose visualization library
+  - Requires Javascript proficiency
+  - Can be used with SVG or HTML
+  - What D3 doesn't do
+   - Not a chart or map library
+  - Code Example
+    - http://www.macwright.org/presentations/dcjq/
+  - Show some demos
+  - GeoDash
+    - Code Demo + images
