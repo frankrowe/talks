@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/code.css">
+<style>
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: #929292;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size:80px;
+  line-height:120px;
+  margin:0;
+}
+
+b {
+  color: #97befc;
+}
+
+section {
+  background: #333;
+  color: #fff;
+  padding: 2em;
+}
+
+.grey {
+  color: #999;
+}
+
+a:link,
+a:visited {
+  color: #83AF9B;;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p.head {
+  font-size: 300%;
+  line-height: 100%;
+  font-weight: bolder;
+  text-align: left;
+  margin: 0;
+}
+
+p.bullets {
+  font-size: 190%;
+  line-height:150%;
+  text-align: left;
+  padding-left: 1em;
+}
+
+span.subtext {
+  font-size: 50%;
+  line-height:100%;
+  color: #83AF9B;
+}
+
+</style>
+
+<section style="text-align:left;">
+  <p class="head">Intro to</p>
+  <p class="head"> Open Source </p>
+  <p class="head"><b>Dashboards</b></p>
+  <p class="grey" style="padding-top:3em;">Frank Rowe<br>GIS Developer, ESRGC</br><a href="https://twitter.com/fsrowe">@fsrowe</a></p>
+</section>
+
+<section>
+<p class="head">Overview<p>
+  <p class="bullets">
+    - <b>What</b> are Dashboards?
+</section>
+
+<section>
+<p class="head">Overview<p>
+  <p class="bullets">
+    - <b>What</b> are Dashboards?
+    <br>- <b>Why</b> open source?
+</section>
+
+<section>
+<p class="head">Overview<p>
+  <p class="bullets">
+    - <b>What</b> are Dashboards?
+    <br>- <b>Why</b> open source?
+    <br>- Server side tools
+</section>
+
+<section>
+<p class="head">Overview<p>
+  <p class="bullets">
+    - <b>What</b> are Dashboards?
+    <br>- <b>Why</b> open source?
+    <br>- Server side tools
+    <br>- Client side tools
+</section>
+
+<section>
+<p class="head">Overview<p>
+  <p class="bullets">
+    - <b>What</b> are Dashboards?
+    <br>- <b>Why</b> open source?
+    <br>- Server side tools
+    <br>- Client side tools
+    <br>- D3.js
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>What</b> are Dashboards?</p>
+  <p class="bullets">- Data
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>What</b> are Dashboards?</p>
+  <p class="bullets">- Data &#8594; Complex + Large
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>What</b> are Dashboards?</p>
+  <p class="bullets">- Data &#8594; Complex + Large
+  <br> - Queries
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>What</b> are Dashboards?</p>
+  <p class="bullets">- Data &#8594; Complex + Large
+  <br> - Queries + UI
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>What</b> are Dashboards?</p>
+  <p class="bullets">- Data &#8594; Complex + Large
+  <br> - Queries + UI
+  <br> - Data &#8594; Simple + Small
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>What</b> are Dashboards?</p>
+  <p class="bullets">- Data &#8594; Complex + Large
+  <br> - Queries + UI
+  <br> - Data  &#8594; Simple + Small
+  <br> - Visualize
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Why</b> open source?</p>
+  <p class="bullets">- Vast library of reusable components
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Why</b> open source?</p>
+  <p class="bullets">- Vast library of reusable components
+    <br>- Community
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Why</b> open source?</p>
+  <p class="bullets">- Vast library of reusable components
+    <br>- Community
+    <br>- Cost
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Why</b> open source?</p>
+  <p class="bullets">- Vast library of reusable components
+    <br>- Community
+    <br>- Cost
+    <br>- Flexible
+</section>
+
+<section style="text-align:center; padding-top: 9em;">
+  <p class="head"><b>ESRGC</b> dashboards</p>
+  <p class="bullets"></p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Server</b> side</p>
+  <p class="bullets">
+    - Ubuntu <span class="subtext">(OS)</span>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Server</b> side</p>
+  <p class="bullets">
+    - Ubuntu <span class="subtext">(OS)</span>
+    <br>- Node.js <span class="subtext">(platform)</span>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Server</b> side</p>
+  <p class="bullets">
+    - Ubuntu <span class="subtext">(OS)</span>
+    <br>- Node.js <span class="subtext">(platform)</span>
+    <br>- PostgreSQL + PostGIS <span class="subtext">(database)</span>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Server</b> side</p>
+  <p class="bullets">
+    - Ubuntu <span class="subtext">(OS)</span>
+    <br>- Node.js <span class="subtext">(platform)</span>
+    <br>- PostgreSQL + PostGIS <span class="subtext">(database)</span>
+    <br>- Modules <span class="subtext">(<a href="http://npmjs.org">npm</a>)</span>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Client</b> side</p>
+  <p class="bullets">
+    - Leaflet <span class="subtext">(maps)</span>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Client</b> side</p>
+  <p class="bullets">
+    - Leaflet <span class="subtext">(maps)</span>
+    <br>- Backbone <span class="subtext">(structure)</span>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Client</b> side</p>
+  <p class="bullets">
+    - Leaflet <span class="subtext">(maps)</span>
+    <br>- Backbone <span class="subtext">(structure)</span>
+    <br>- Bootstrap <span class="subtext">(layout + style)</span>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Client</b> side</p>
+  <p class="bullets">
+    - Leaflet <span class="subtext">(maps)</span>
+    <br>- Backbone <span class="subtext">(structure)</span>
+    <br>- Bootstrap <span class="subtext">(layout + style)</span>
+    <br>- D3 <span class="subtext">(visualization)</span>
+  </p>
+</section>
+
+
+<section style="text-align:center;">
+  <p class="head"><b>Client</b> side</p>
+  <p class="bullets">
+    - Leaflet <span class="subtext">(maps)</span>
+    <br>- Backbone <span class="subtext">(structure)</span>
+    <br>- Bootstrap <span class="subtext">(layout + style)</span>
+    <br>- D3 <span class="subtext">(visualization)</span>
+    <br>- Chrome
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>Client</b> side</p>
+  <p class="bullets">
+    - Leaflet <span class="subtext">(maps)</span>
+    <br>- Backbone <span class="subtext">(structure)</span>
+    <br>- Bootstrap <span class="subtext">(layout + style)</span>
+    <br>- D3 <span class="subtext">(visualization)</span>
+    <br>- Chrome <span class="subtext">(hopefully)</span>
+  </p>
+</section>
+
+<section style="text-align:center;padding-top: 9em; padding-left: 5em;">
+  <p class="head">What is <b>D3</b>.js?</p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">What D3 is <b>not</b></p>
+  <p class="bullets">
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">What D3 is <b>not</b></p>
+  <p class="bullets">
+    - Not a <b>chart</b> library
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">What D3 is <b>not</b></p>
+  <p class="bullets">
+    - Not a <b>chart</b> library
+    <br>- Not a <b>map</b> library
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets">
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets"> - A general purpose <b>visualization</b> library
+  </p>
+</section>
+
+<section style="text-align:center;background:url(img/d3examples.png);">
+
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets"> - A general purpose <b>visualization</b> library
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets"> - A general purpose <b>visualization</b> library
+    <br> - In <b>Javascript</b>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets"> - A general purpose <b>visualization</b> library
+    <br> - In <b>Javascript</b>
+    <br> - To map data to documents</b>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets"> - Data Driven Documents
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets"> - Data Driven Documents
+    <br>- The DOM
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets"> - Data Driven Documents
+    <br>- The DOM
+    <br>- D3 maps <b>data</b> to <b>objects</b> in the DOM
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">So what is D3?</p>
+  <p class="bullets"> - Data Driven Documents
+    <br>- The DOM
+    <br>- D3 maps <b>data</b> to <b>objects</b> in the DOM
+    <br>- Plus lots of other cool stuff to help you make visualizations
+      <span class="subtext">(<a href="https://github.com/mbostock/d3/wiki">docs</a>)</span>
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">Quick Example</p>
+</section>
+
+<section>
+  <p class="head">Quick Example</p>
+  <br>
+<pre><code>
+d3.selectAll('div')
+  .data([1, 2, 3])
+  .enter()
+  .append('div')
+  .text(String);
+</code></pre>
+</section>
+
+
+<section>
+  <p class="head">Quick Example</p>
+  <br>
+<pre><code>
+// an empty selection.
+// looking for instantiations of data
+d3.selectAll('div')
+</code></pre>
+</section>
+
+<section>
+  <p class="head">Quick Example</p>
+  <br>
+<pre><code>
+// data, which would be bound to a
+// selection
+.data([1, 2, 3])
+</code></pre>
+</section>
+
+<section>
+  <p class="head">Quick Example</p>
+  <br>
+<pre><code>
+// for every time that we see data
+// but we don't see an element
+.enter()
+</code></pre>
+</section>
+
+<section>
+  <p class="head">Quick Example</p>
+  <br>
+<pre><code>
+// append an element
+.append('div')
+</code></pre>
+</section>
+
+<section>
+  <p class="head">Quick Example</p>
+  <br>
+<pre><code>
+// and fill it with text
+.text(String);
+</code></pre>
+</section>
+
+<section>
+  <p class="head">Quick Example</p>
+  <br>
+<pre><code>
+d3.selectAll('div')
+  .data([1, 2, 3])
+  .enter()
+  .append('div')
+  .text(String);
+</code></pre>
+<p style="text-align: right; font-size: 50%;">Example from <a href="http://www.macwright.org/presentations/dcjq/">macwright.org</a>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <p class="bullets">
+  </p>
+</section>
+
+<section style="text-align:center;background:url(img/d3map.png);">
+
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <p class="bullets">- d3.geo
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <p class="bullets"><pre><code>var path = d3.geo.path()
+    .projection(projection);
+</code></pre>
+  </p>
+</section>
+
+
+<script src="js/d3.min.js"></script>
+<script src="js/highlight.js"></script>
+<script src="js/stack.v1.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+  var mystack = stack()
+</script>
