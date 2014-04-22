@@ -62,6 +62,32 @@ span.subtext {
   color: #83AF9B;
 }
 
+.circles {
+  text-align: center;
+  overflow: hidden;
+  background: #23241F;
+  padding: 10px;
+  margin: 0 auto;
+  width: 220px;
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  background: red;
+  font-size: 18px;
+  line-height: 60px;
+  border-radius: 30px;
+  float: left;
+  margin-left: 10px;
+}
+
+pre {
+  margin: 0;
+}
+
+.arrow {
+  margin: 20px 0px;
+}
 </style>
 
 <section style="text-align:left;">
@@ -270,9 +296,16 @@ span.subtext {
   </p>
 </section>
 
-<section style="text-align:center;padding-top: 9em; padding-left: 5em;">
+<section>
   <p class="head">What is <b>D3</b>.js?</p>
 </section>
+
+<section>
+  <p class="head">What is <b>D3</b>.js?</p>
+  <p class="bullets"> - A <b>general purpose</b> visualization library
+  </p>
+</section>
+
 
 <section style="text-align:center;">
   <p class="head">What D3 is <b>not</b></p>
@@ -295,15 +328,9 @@ span.subtext {
   </p>
 </section>
 
-<section style="text-align:center;">
-  <p class="head">So what is D3?</p>
-  <p class="bullets">
-  </p>
-</section>
-
-<section style="text-align:center;">
-  <p class="head">So what is D3?</p>
-  <p class="bullets"> - A general purpose <b>visualization</b> library
+<section>
+  <p class="head">What is <b>D3</b>.js?</p>
+  <p class="bullets"> - A <b>general purpose</b> visualization library
   </p>
 </section>
 
@@ -312,70 +339,95 @@ span.subtext {
 </section>
 
 <section style="text-align:center;">
-  <p class="head">So what is D3?</p>
-  <p class="bullets"> - A general purpose <b>visualization</b> library
+  <p class="head">What is <b>D3</b>.js? (really)</p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">What is <b>D3</b>.js? (really)</p>
+  <p class="bullets"> - A JavaScript library
   </p>
 </section>
 
 <section style="text-align:center;">
-  <p class="head">So what is D3?</p>
-  <p class="bullets"> - A general purpose <b>visualization</b> library
-    <br> - In <b>Javascript</b>
+  <p class="head">What is <b>D3</b>.js? (really)</p>
+  <p class="bullets"> - A JavaScript library that connects <b>data</b> to <b>documents</b>
   </p>
 </section>
 
 <section style="text-align:center;">
-  <p class="head">So what is D3?</p>
-  <p class="bullets"> - A general purpose <b>visualization</b> library
-    <br> - In <b>Javascript</b>
-    <br> - To map data to documents</b>
+  <p class="head">What is <b>D3</b>.js? (really)</p>
+  <p class="bullets"> - A JavaScript library that connects <b>data</b> to <b>documents</b> in a webpage.
   </p>
 </section>
 
+
 <section style="text-align:center;">
-  <p class="head">So what is D3?</p>
+  <p class="head">What is <b>D3</b>.js?</p>
   <p class="bullets"> - Data Driven Documents
   </p>
 </section>
 
 <section style="text-align:center;">
-  <p class="head">So what is D3?</p>
-  <p class="bullets"> - Data Driven Documents
-    <br>- The DOM
-  </p>
-</section>
-
-<section style="text-align:center;">
-  <p class="head">So what is D3?</p>
+  <p class="head">What is <b>D3</b>.js?</p>
   <p class="bullets"> - Data Driven Documents
     <br>- The DOM
-    <br>- D3 maps <b>data</b> to <b>objects</b> in the DOM
   </p>
 </section>
 
 <section style="text-align:center;">
-  <p class="head">So what is D3?</p>
+  <p class="head">What is <b>D3</b>.js?</p>
   <p class="bullets"> - Data Driven Documents
     <br>- The DOM
-    <br>- D3 maps <b>data</b> to <b>objects</b> in the DOM
-    <br>- Plus lots of other cool stuff to help you make visualizations
-      <span class="subtext">(<a href="https://github.com/mbostock/d3/wiki">docs</a>)</span>
+    <br>- D3 maps <b>data</b> to <b>documents</b> in the DOM
+  </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">What is <b>D3</b>.js?</p>
+  <p class="bullets"> - Data Driven Documents
+    <br>- The DOM
+    <br>- D3 maps <b>data</b> to <b>documents</b> in the DOM
+    <br>- Plus lots of other cool stuff
+      <span class="subtext">(<a href="https://github.com/mbostock/d3/wiki/API-Reference">docs</a>)</span>
   </p>
 </section>
 
 <section style="text-align:center;">
   <p class="head">Quick Example</p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head">Quick Example</p>
+  <br>
+<pre>
+<code>[1, 2, 3]
+</code></pre>
+<div class="arrow">&#8595;</div>
+<pre>
+<code>&lt;div class="circle"&gt;1&lt;/div&gt;
+&lt;div class="circle"&gt;2&lt;/div&gt;
+&lt;div class="circle"&gt;3&lt;/div&gt;
+</code></pre>
+<div class="arrow">&#8595;</div>
+<div class="circles">
+<div class="circle">1</div>
+<div class="circle">2</div>
+<div class="circle">3</div>
+</div>
 </section>
 
 <section>
   <p class="head">Quick Example</p>
   <br>
-<pre><code>
-d3.selectAll('div')
+<pre>
+<code>d3.selectAll('div')
   .data([1, 2, 3])
   .enter()
   .append('div')
-  .text(String);
+  .attr('class', 'circle')
+  .text(function(d){
+    return d;
+  });
 </code></pre>
 </section>
 
@@ -383,8 +435,8 @@ d3.selectAll('div')
 <section>
   <p class="head">Quick Example</p>
   <br>
-<pre><code>
-// an empty selection.
+<pre>
+<code>// an empty selection.
 // looking for instantiations of data
 d3.selectAll('div')
 </code></pre>
@@ -393,8 +445,8 @@ d3.selectAll('div')
 <section>
   <p class="head">Quick Example</p>
   <br>
-<pre><code>
-// data, which would be bound to a
+<pre>
+<code>// data, which would be bound to a
 // selection
 .data([1, 2, 3])
 </code></pre>
@@ -403,8 +455,8 @@ d3.selectAll('div')
 <section>
   <p class="head">Quick Example</p>
   <br>
-<pre><code>
-// for every time that we see data
+<pre>
+<code>// for every time that we see data
 // but we don't see an element
 .enter()
 </code></pre>
@@ -413,8 +465,8 @@ d3.selectAll('div')
 <section>
   <p class="head">Quick Example</p>
   <br>
-<pre><code>
-// append an element
+<pre>
+<code>// append an element
 .append('div')
 </code></pre>
 </section>
@@ -422,23 +474,54 @@ d3.selectAll('div')
 <section>
   <p class="head">Quick Example</p>
   <br>
-<pre><code>
-// and fill it with text
-.text(String);
+<pre>
+<code>// assign an attribute
+.attr('class', 'circle')
 </code></pre>
 </section>
 
 <section>
   <p class="head">Quick Example</p>
   <br>
-<pre><code>
-d3.selectAll('div')
+<pre>
+<code>// and fill it with text
+.text(function(d){
+  return d;
+});
+</code></pre>
+</section>
+
+<section>
+  <p class="head">Quick Example</p>
+  <br>
+<pre style="float: left;">
+<code>d3.selectAll('div')
   .data([1, 2, 3])
   .enter()
   .append('div')
-  .text(String);
+  .attr('class', 'circle')
+  .text(function(d){
+    return d;
+  });
 </code></pre>
-<p style="text-align: right; font-size: 50%;">Example from <a href="http://www.macwright.org/presentations/dcjq/">macwright.org</a>
+<div style="float: right; text-align: center;">
+<pre>
+<code>[1, 2, 3]
+</code></pre>
+<div class="arrow">&#8595;</div>
+<pre>
+<code>&lt;div class="circle"&gt;1&lt;/div&gt;
+&lt;div class="circle"&gt;2&lt;/div&gt;
+&lt;div class="circle"&gt;3&lt;/div&gt;
+</code></pre>
+<div class="arrow">&#8595;</div>
+<div class="circles">
+<div class="circle">1</div>
+<div class="circle">2</div>
+<div class="circle">3</div>
+</div>
+</div>
+
 </section>
 
 <section style="text-align:center;">
@@ -459,13 +542,246 @@ d3.selectAll('div')
 
 <section>
   <p class="head"><b>D3</b> and <b>GIS</b></p>
-  <pre><code>
+  <br>
+  <pre style="float: left;">
+<code>// var us = US county features
 var path = d3.geo.path()
-  .projection(projection);
+d3.selectAll("g")
+  .data(us)
+  .attr("class", "counties")
+  .enter()
+  .append("path")
+  .attr("d", path);
+</code></pre>
+<img src="img/d3map3.png" style="float: left; margin-left: 20px;">
+  </p>
+</section>
+
+<section>
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <br>
+  <pre>
+<code>//map unemployment rates to css classes
+var quantize = d3.scale.quantize()
+  .domain([0, .15])
+  .range(d3.range(9).map(function(i) {
+    return "q" + i;
+  }));
+
+quantize(0.04) // q1
+quantize(0.08) // q4
+quantize(0.15) // q8
 </code></pre>
   </p>
 </section>
 
+<section>
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <br>
+  <pre style="float: left;">
+<code>.q0 { fill:rgb(247,251,255); }
+.q1 { fill:rgb(222,235,247); }
+.q2 { fill:rgb(198,219,239); }
+.q3 { fill:rgb(158,202,225); }
+.q4 { fill:rgb(107,174,214); }
+.q5 { fill:rgb(66,146,198); }
+.q6 { fill:rgb(33,113,181); }
+.q7 { fill:rgb(8,81,156); }
+.q8 { fill:rgb(8,48,107); }
+</code></pre>
+<img src="img/quantiles.png" style="float: left; margin-left: 100px; margin-top: 10px;">
+  </p>
+</section>
+
+<section>
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <br>
+  <pre style="float: left;">
+<code>// var us = US county features
+var path = d3.geo.path()
+d3.selectAll("g")
+  .data(us)
+  .attr("class", "counties")
+  .enter()
+  .append("path")
+  .attr("d", path);
+</code></pre>
+<img src="img/d3map3.png" style="float: left; margin-left: 20px;">
+  </p>
+</section>
+
+<section>
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <br>
+  <pre style="float: left;">
+<code>d3.selectAll("g")
+  .data(us)
+  .attr("class", "counties")
+  .enter()
+  .append("path")
+  .attr("d", path)
+  .attr("class", function(d) {
+    return quantize(d.rate);
+  })
+</code></pre>
+<div style="float: left; margin-left: 20px;">
+<img src="img/d3map2.png"><br><br><br>
+<a href="http://bl.ocks.org/mbostock/4060606">Full Example</a>
+</div>
+  </p>
+
+</section>
+<section>
+  <p class="head"><b>D3</b> and <b>Charts</b></p>
+  </p>
+</section>
+
+<section>
+  <p class="head"><b>D3</b> and <b>Charts</b></p>
+  <p class="bullets"> - GeoDash <span class="subtext"><a href="https://github.com/esrgc/geodash">GitHub</a></span>
+  </p>
+</section>
+
+<section>
+  <p class="head">GeoDash</p>
+  <br>
+    <pre style="font-size: 60%; line-height: 100%; float: left;">
+<code>var chart = new GeoDash.BarChartVertical('.barchartvertical', {
+    x: 'id'
+    , y: ['2011', '2012', '2013']
+    , colors: ['#ef3b2c','#cb181d','#a50f15']
+    , title: 'Vertical Bar Chart'
+})
+</code></pre>
+</section>
+
+<section>
+  <p class="head">GeoDash</p>
+  <br>
+    <pre style="font-size: 60%; line-height: 100%; float: left;">
+<code>var chart = new GeoDash.BarChartVertical('.barchartvertical', {
+    x: 'id'
+    , y: ['2011', '2012', '2013']
+    , colors: ['#ef3b2c','#cb181d','#a50f15']
+    , title: 'Vertical Bar Chart'
+})
+</code></pre>
+    <pre style="font-size: 60%; line-height: 100%; margin-top: 20px; float: left; clear: both;">
+<code>var data = [
+  {
+    'id': 'Mon',
+    '2011': '42235.7',
+    '2012': '42235.7',
+    '2013': '42235.7'
+  },
+  {
+    'id': 'Tue',
+    '2011': '165113.8',
+    '2012': '42235.7',
+    '2013': '42235.7'
+  }
+]
+</code></pre>
+</section>
+
+<section>
+  <p class="head">GeoDash</p>
+  <br>
+    <pre style="font-size: 60%; line-height: 100%; float: left;">
+<code>var chart = new GeoDash.BarChartVertical('.barchartvertical', {
+    x: 'id'
+    , y: ['2011', '2012', '2013']
+    , colors: ['#ef3b2c','#cb181d','#a50f15']
+    , title: 'Vertical Bar Chart'
+})
+</code></pre>
+    <pre style="font-size: 60%; line-height: 100%; margin-top: 20px; float: left; clear: both;">
+<code>var data = [
+  {
+    'id': 'Mon',
+    '2011': '42235.7',
+    '2012': '42235.7',
+    '2013': '42235.7'
+  },
+  {
+    'id': 'Tue',
+    '2011': '165113.8',
+    '2012': '42235.7',
+    '2013': '42235.7'
+  }
+]
+</code></pre>
+    <pre style="font-size: 60%; line-height: 100%; margin-top: 20px; float: left; margin-left: 20px;">
+<code>chart.update(data)
+</code></pre>
+</section>
+
+<section>
+  <p class="head">GeoDash</p>
+  <br>
+    <pre style="font-size: 60%; line-height: 100%; float: left;">
+<code>var chart = new GeoDash.BarChartVertical('.barchartvertical', {
+    x: 'id'
+    , y: ['2011', '2012', '2013']
+    , colors: ['#ef3b2c','#cb181d','#a50f15']
+    , title: 'Vertical Bar Chart'
+})
+</code></pre>
+    <pre style="font-size: 60%; line-height: 100%; margin-top: 20px; float: left; clear: both;">
+<code>var data = [
+  {
+    'id': 'Mon',
+    '2011': '42235.7',
+    '2012': '42235.7',
+    '2013': '42235.7'
+  },
+  {
+    'id': 'Tue',
+    '2011': '165113.8',
+    '2012': '42235.7',
+    '2013': '42235.7'
+  }
+]
+</code></pre>
+    <pre style="font-size: 60%; line-height: 100%; margin-top: 20px; float: left; margin-left: 20px;">
+<code>chart.update(data)
+</code></pre>
+<div style="margin-top: 20px; float: left; margin-left: 20px;">
+  <img src="img/geodash.png">
+</div>
+</section>
+
+<section>
+  <p class="head">Links</p>
+  <p class="bullets">- <a href="https://github.com/mbostock/d3/wiki">github.com/mbostock/d3/wiki</a>
+  </p>
+</section>
+
+<section>
+  <p class="head">Links</p>
+  <p class="bullets">- <a href="https://github.com/mbostock/d3/wiki">github.com/mbostock/d3/wiki</a>
+  <br>- <a href="https://github.com/mbostock/d3/wiki">github.com/esrgc/</a>
+  </p>
+</section>
+
+<section>
+  <p class="head">Links</p>
+  <p class="bullets">- <a href="https://github.com/mbostock/d3/wiki">github.com/mbostock/d3/wiki</a>
+  <br>- <a href="https://github.com/mbostock/d3/wiki">github.com/esrgc/</a>
+  <br>- Ask me stuff 
+  <br><a href="https://twitter.com/fsrowe">@fsrowe</a> or <a href="mailto:fsrowe@gmail.com">fsrowe@gmail.com</a>
+  </p>
+</section>
+
+<section>
+  <p class="head">Links</p>
+  <p class="bullets">- <a href="https://github.com/mbostock/d3/wiki">github.com/mbostock/d3/wiki</a>
+  <br>- <a href="https://github.com/mbostock/d3/wiki">github.com/esrgc/</a>
+  <br>- Ask me stuff 
+  <br><a href="https://twitter.com/fsrowe">@fsrowe</a> or <a href="mailto:fsrowe@gmail.com">fsrowe@gmail.com</a>
+  <br>- Thanks
+  </p>
+</section>
 
 <script src="js/d3.min.js"></script>
 <script src="js/highlight.js"></script>
