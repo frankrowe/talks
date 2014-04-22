@@ -33,7 +33,7 @@ section {
 
 a:link,
 a:visited {
-  color: #83AF9B;;
+  color: #6bc79d;
   text-decoration: underline;
 }
 
@@ -59,7 +59,7 @@ p.bullets {
 span.subtext {
   font-size: 50%;
   line-height:100%;
-  color: #83AF9B;
+  color: #FFE181;
 }
 
 .circles {
@@ -94,7 +94,7 @@ pre {
   <p class="head">Intro to</p>
   <p class="head"> Open Source </p>
   <p class="head"><b>Dashboards</b></p>
-  <p class="grey" style="padding-top:3em;">Frank Rowe<br>GIS Developer, ESRGC</br><a href="https://twitter.com/fsrowe">@fsrowe</a></p>
+  <p class="grey" style="padding-top:3em;">Frank Rowe<br>GIS Developer, <span style="color: #FFE181">ESRGC</span></br><a href="https://twitter.com/fsrowe">@fsrowe</a></p>
 </section>
 
 <section>
@@ -135,6 +135,16 @@ pre {
     <br>- Server side tools
     <br>- Client side tools
     <br>- D3.js
+</section>
+
+<section>
+<p class="head">Overview<p>
+  <p class="bullets">
+    - <b>Goal</b> of Dashboards
+    <br>- <b>Why</b> open source?
+    <br>- Server side tools
+    <br>- Client side tools
+    <br>- D3.js <span class="subtext">(there will be code)</span>
 </section>
 
 <section style="text-align:center;">
@@ -426,8 +436,8 @@ pre {
   .append('div')
   .attr('class', 'circle')
   .text(function(d){
-    return d;
-  });
+    return d
+  })
 </code></pre>
 </section>
 
@@ -436,8 +446,8 @@ pre {
   <p class="head">Quick Example</p>
   <br>
 <pre>
-<code>// an empty selection.
-// looking for instantiations of data
+<code>// an empty selection
+// looking for data
 d3.selectAll('div')
 </code></pre>
 </section>
@@ -446,7 +456,7 @@ d3.selectAll('div')
   <p class="head">Quick Example</p>
   <br>
 <pre>
-<code>// data, which would be bound to a
+<code>// data, to be bound to a
 // selection
 .data([1, 2, 3])
 </code></pre>
@@ -486,8 +496,8 @@ d3.selectAll('div')
 <pre>
 <code>// and fill it with text
 .text(function(d){
-  return d;
-});
+  return d
+})
 </code></pre>
 </section>
 
@@ -501,8 +511,8 @@ d3.selectAll('div')
   .append('div')
   .attr('class', 'circle')
   .text(function(d){
-    return d;
-  });
+    return d
+  })
 </code></pre>
 <div style="float: right; text-align: center;">
 <pre>
@@ -530,14 +540,39 @@ d3.selectAll('div')
   </p>
 </section>
 
-<section style="text-align:center;background:url(img/d3map.png);">
-
+<section style="text-align:center;">
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <p class="bullets">- d3.geo
+  </p>
 </section>
 
 <section style="text-align:center;">
   <p class="head"><b>D3</b> and <b>GIS</b></p>
-  <p class="bullets">- Let's make a choropleth
+  <p class="bullets">- d3.geo
+  <br>- d3.geo.path() <span class="subtext">make svg path from GeoJSON</span>
   </p>
+</section>
+
+<section style="text-align:center;">
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <p class="bullets">- d3.geo
+  <br>- d3.geo.path() <span class="subtext">make svg path from GeoJSON</span>
+  <br>- d3.scale
+  </p>
+</section>
+
+
+<section style="text-align:center;">
+  <p class="head"><b>D3</b> and <b>GIS</b></p>
+  <p class="bullets">- d3.geo
+  <br>- d3.geo.path() <span class="subtext">make svg path from GeoJSON</span>
+  <br>- d3.scale
+  <br>- Let's make a choropleth
+  </p>
+</section>
+
+<section style="text-align:center;background:url(img/d3map.png);">
+
 </section>
 
 <section>
@@ -551,7 +586,7 @@ d3.selectAll("g")
   .attr("class", "counties")
   .enter()
   .append("path")
-  .attr("d", path);
+  .attr("d", path)
 </code></pre>
 <img src="img/d3map3.png" style="float: left; margin-left: 20px;">
   </p>
@@ -565,8 +600,8 @@ d3.selectAll("g")
 var quantize = d3.scale.quantize()
   .domain([0, .15])
   .range(d3.range(9).map(function(i) {
-    return "q" + i;
-  }));
+    return "q" + i
+  }))
 
 quantize(0.04) // q1
 quantize(0.08) // q4
@@ -604,7 +639,7 @@ d3.selectAll("g")
   .attr("class", "counties")
   .enter()
   .append("path")
-  .attr("d", path);
+  .attr("d", path)
 </code></pre>
 <img src="img/d3map3.png" style="float: left; margin-left: 20px;">
   </p>
@@ -623,7 +658,7 @@ d3.selectAll("g")
   .append("path")
   .attr("d", path)
   .attr("class", function(d) {
-    return quantize(d.rate);
+    return quantize(d.rate)
   })
 </code></pre>
 <div style="float: left; margin-left: 20px;">
